@@ -1,15 +1,4 @@
 import type { Config } from "tailwindcss";
-import localFont from "@next/font/dist/local";
-
-const basementGrotesque = localFont({
-  src: [
-    {
-      path: "./public/fonts/BasementGrotesque-Black.otf",
-      weight: "800",
-    },
-  ],
-  variable: "--font-basement-grotesque",
-});
 
 const config: Config = {
   content: [
@@ -20,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        "basement-grotesque": ["var(--font-basement-grotesque)"],
+        basement: ["BasementGrotesque", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
