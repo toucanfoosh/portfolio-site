@@ -21,6 +21,14 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-anchor: none;
+  overflow: -moz-scrollbars-none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @layer utilities {
@@ -29,12 +37,18 @@ body {
   }
 }
 
+.p-site-container {
+  /* overflow: hidden; */
+  /* height: 100vh;
+  width: 100vw; */
+}
+
 .p-background-gradient {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #301e8a, #1c1058, #1b83a9, #1dbac8);
+  background: linear-gradient(-45deg, #3351a3, #211164, #2073a2);
   background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
+  animation: gradient 120s ease infinite;
   height: 100vh;
   width: 100vw;
   margin: 0;
