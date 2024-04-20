@@ -47,7 +47,7 @@ body {
 .p-background-gradient {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #3297b5, #062089, #178ed3);
+  background: linear-gradient(-45deg, #8932b5, #063289, #178ed3);
   background-size: 400% 400%;
   animation: gradient 120s ease infinite;
   height: 100vh;
