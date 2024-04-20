@@ -25,6 +25,7 @@ body {
   scrollbar-width: none;
   overflow-anchor: none;
   overflow: -moz-scrollbars-none;
+  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -46,9 +47,9 @@ body {
 .p-background-gradient {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #613ed2, #1e077a, #178ed3);
+  background: linear-gradient(-45deg, #3297b5, #2a0e99, #178ed3);
   background-size: 400% 400%;
-  animation: gradient 120s ease infinite;
+  animation: gradient 10s ease infinite;
   height: 100vh;
   width: 100vw;
   margin: 0;
