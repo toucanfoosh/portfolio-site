@@ -16,6 +16,7 @@ export default function Music(): React.ReactElement {
         height="256"
         style={{
           borderRadius: "0.5rem",
+          userSelect: "none",
         }}
       />
       <h1 className={`pt-5 text-lg ${nunitoSans.className}`}>
