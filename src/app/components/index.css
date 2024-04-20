@@ -20,7 +20,7 @@
 }
 
 .p-invert-hover:hover {
-    mix-blend-mode: exclusion;
+    mix-blend-mode: lighten;
 }
 
 .p-top-gap {
