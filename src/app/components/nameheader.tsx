@@ -18,7 +18,7 @@ export default function NameHeader({
       <h1
         className={`${
           selectedTab != -1 && !animating ? `p-invert-hover cursor-pointer` : ``
-        } overflow-hidden text-7xl z-10 relative mix-blend-overlay p-noselect pb-5`}
+        } overflow-hidden text-5xl md:text-7xl z-10 relative mix-blend-overlay p-noselect pb-5`}
         onClick={animating ? () => {} : () => onClick(homeIndex)}
       >
         DANIEL WU

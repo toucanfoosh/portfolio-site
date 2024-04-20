@@ -28,7 +28,7 @@ export default function Tabs({
               onClick={animating ? () => {} : () => setTab(i)}
               className={`${
                 !animating ? `p-invert-hover cursor-pointer` : ``
-              } mix-blend-overlay p-noselect font-basement font-bold text-4xl ${
+              } mix-blend-overlay p-noselect font-basement font-bold text-2xl md:text-4xl ${
                 selectedTab === i ? "p-tab-out opacity-0 mx-0" : "p-tab-in mx-5"
               }`}
             >
