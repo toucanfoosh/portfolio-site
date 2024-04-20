@@ -37,16 +37,16 @@ body {
   }
 }
 
-.p-site-container {
-  /* overflow: hidden; */
-  /* height: 100vh;
-  width: 100vw; */
-}
+/* .p-site-container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+} */
 
 .p-background-gradient {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #3351a3, #211164, #2073a2);
+  background: linear-gradient(-45deg, #613ed2, #1e077a, #178ed3);
   background-size: 400% 400%;
   animation: gradient 120s ease infinite;
   height: 100vh;
