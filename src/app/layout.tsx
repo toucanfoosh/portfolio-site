@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "https://media.discordapp.net/attachments/959320945133248512/1231434803945934848/toucanfish.png?ex=6636f208&is=66247d08&hm=a54386b9f48ca8964b19ace10203b28853967b9ba8a7d02a0fa1017e0e27c30e&=&format=webp&quality=lossless&width=1402&height=1402",
+        image: "/images/toucanfish.jpg",
       },
     ],
     locale: "en_US",
@@ -64,11 +64,11 @@ export default function RootLayout({
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta
-          property="og:image:url"
-          content={metadata.openGraph.images[0].url}
+          property="og:image"
+          content={metadata.openGraph.images[0].image}
         />
         <meta property="og:image:width" content="554" />
-        <meta property="og:image:height" content="554" />
+        <meta property="og:image:height" content="311" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:locale" content={metadata.openGraph.locale} />
         <meta property="og:url" content={metadata.openGraph.url} />
@@ -77,11 +77,11 @@ export default function RootLayout({
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta
-          name="twitter:image:url"
-          content={metadata.openGraph.images[0].url}
+          name="twitter:image"
+          content={metadata.openGraph.images[0].image}
         />
         <meta name="twitter:image:width" content="554" />
-        <meta name="twitter:image:height" content="554" />
+        <meta name="twitter:image:height" content="311" />
       </Head>
       <body>{children}</body>
     </html>
