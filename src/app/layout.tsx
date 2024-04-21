@@ -10,12 +10,19 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://www.toucanfish.com",
     locale: "en_US",
-    images: {
-      url: "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&",
-      width: "1200",
-      height: "630",
-      alt: "A toucanfish",
-    },
+    siteName: "Daniel Wu",
+    images: [
+      {
+        url: "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toucanfish",
+    creator: "@toucanfoosh",
+    images:
+      "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&",
   },
 };
 
