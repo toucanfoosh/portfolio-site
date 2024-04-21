@@ -4,6 +4,7 @@ import Head from "next/head";
 export const metadata: Metadata = {
   title: "Daniel Wu",
   description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+  metadataBase: new URL("https://www.toucanfish.com"),
   openGraph: {
     title: "Daniel Wu",
     description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
@@ -13,7 +14,13 @@ export const metadata: Metadata = {
     siteName: "Daniel Wu",
     images: [
       {
-        url: "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&",
+        url: new URL(
+          "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
+        ),
+        alt: "A toucanfish",
+        type: "image/png",
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -21,8 +28,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@toucanfish",
     creator: "@toucanfoosh",
-    images:
-      "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&",
+    description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+    images: {
+      url: new URL(
+        "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
+      ),
+      alt: "A toucanfish",
+      type: "image/png",
+      width: 1200,
+      height: 630,
+    },
   },
 };
 
