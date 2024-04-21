@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Nunito_Sans } from "next/font/google";
+import "../globals.css";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function Project({
   return (
     <div className="flex flex-col lg:flex-row justify-start items-center lg:items-start w-[100%] min-w-[20rem] m-3 p-2 bg-black/25 backdrop-blur rounded-lg">
       <div
-        className="flex m-5 min-w-[256px] cursor-pointer rounded-lg justify-center hover:scale-105 transition-transform"
+        className="p-noselect flex m-5 min-w-[256px] cursor-pointer rounded-lg justify-center hover:scale-105 transition-transform"
         onClick={() => window.open(link, "_blank")}
       >
         <Image
