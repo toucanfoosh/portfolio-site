@@ -69,7 +69,7 @@ export default function RootLayout({
         />
         <meta property="og:image:width" content="554" />
         <meta property="og:image:height" content="311" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:locale" content={metadata.openGraph.locale} />
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:type" content="website" />
@@ -80,8 +80,10 @@ export default function RootLayout({
           name="twitter:image"
           content={metadata.openGraph.images[0].image}
         />
+        <meta name="twitter:image:type" content="image/jpg" />
         <meta name="twitter:image:width" content="554" />
         <meta name="twitter:image:height" content="311" />
+        <meta name="twitter:url" content={metadata.openGraph.url} />
       </Head>
       <body>{children}</body>
     </html>
