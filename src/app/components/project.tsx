@@ -55,7 +55,7 @@ export default function Project({
           <LuExternalLink />
         </div>
       </div>
-      <div className="flex flex-col flex-1 m-5 mt-0 justify-between lg:h-[256px]">
+      <div className="flex flex-col flex-1 m-5 mt-0 lg:mt-5 justify-between lg:h-[256px]">
         <div>
           <h1 className="text-2xl font-basement font-bold pb-1">{name}</h1>
           <p className={`text-lg ${nunitoSans.className}`}>{description}</p>
