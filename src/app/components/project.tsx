@@ -64,18 +64,18 @@ export default function Project({
           Skills Used: {`${skills}`}
         </div>
         {download && downloadName && downloadcaption && (
-          <a
-            href={download}
-            download={downloadName}
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className={`w-[16rem] h-[4rem] rounded-lg text-white bg-black/50 mt-4 flex items-center justify-center ${nunitoSans.className} p-noselect cursor-pointer hover:bg-black/75 hover:scale-105 transition-all`}
           >
-            <div
-              className={`w-[16rem] h-[4rem] rounded-lg text-white bg-black/50 mt-4 flex items-center justify-center ${nunitoSans.className} p-noselect cursor-pointer hover:bg-black/75 hover:scale-105 transition-all`}
+            <a
+              href={download}
+              download={downloadName}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {downloadcaption}
-            </div>
-          </a>
+            </a>
+          </div>
         )}
       </div>
     </div>
