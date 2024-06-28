@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Daniel Wu",
     images: [
       {
-        url: new URL("https://ibb.co/t36tJWY"),
+        url: new URL("https://ibb.co/qxWf4G7"),
         alt: "A toucanfish",
         type: "image/png",
         width: 1200,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     creator: "@toucanfoosh",
     description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
     images: {
-      url: new URL("https://ibb.co/t36tJWY"),
+      url: new URL("https://ibb.co/qxWf4G7"),
       alt: "A toucanfish",
       type: "image/png",
       width: 1200,
