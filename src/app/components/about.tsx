@@ -42,7 +42,7 @@ export default function About(): React.ReactElement {
           </div>
           <div className="flex flex-row justify-center items-center">
             <IoMail className="pe-2 scale-150" />
-            wu.daniel at northeastern dot edu
+            danielwu.toucan at gmail.com
           </div>
         </div>
       </div>
