@@ -122,3 +122,15 @@
         transform: translateX(100vw);
     }
 }
+
+.projects {
+    width: 11.375rem;
+}
+
+.about {
+    width: 9rem;
+}
+
+.music {
+    width: 8.875rem;
+}
