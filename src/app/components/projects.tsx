@@ -9,7 +9,11 @@ export default function Projects(): React.ReactElement {
       skills: "Python, PyTorch, TensorFlow, CNNs, GANs, Transfer Learning",
       image: "/images/mriclassification.png",
       imagedesc: "MRI Classification Project Thumbnail Image",
+      caption: "Click for the Github Repository",
       link: "https://github.com/shelton-je/BrainTumorMRIClassification",
+      download: "/pdfs/mriclassification.pdf",
+      downloadName: "mriclassification.pdf",
+      downloadcaption: "Download the project report",
     },
   ];
 
@@ -23,7 +27,11 @@ export default function Projects(): React.ReactElement {
           skills={project.skills}
           image={project.image}
           imagedesc={project.imagedesc}
+          caption={project.caption}
           link={project.link}
+          download={project.download}
+          downloadName={project.downloadName}
+          downloadcaption={project.downloadcaption}
         />
       ))}
     </div>

@@ -1,17 +1,43 @@
+import { Metadata } from "next";
 import Head from "next/head";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Daniel Wu",
-  description: "Daniel Wu's personal website",
+  description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+  metadataBase: new URL("https://www.toucanfish.com"),
   openGraph: {
-    images: [
-      {
-        url: "https://media.discordapp.net/attachments/959320945133248512/1231434803945934848/toucanfish.png?ex=6636f208&is=66247d08&hm=a54386b9f48ca8964b19ace10203b28853967b9ba8a7d02a0fa1017e0e27c30e&=&format=webp&quality=lossless&width=1402&height=1402",
-      },
-    ],
-    locale: "en_US",
+    title: "Daniel Wu",
+    description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
     type: "website",
     url: "https://www.toucanfish.com",
+    locale: "en_US",
+    siteName: "Daniel Wu",
+    images: [
+      {
+        url: new URL(
+          "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
+        ),
+        alt: "A toucanfish",
+        type: "image/png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@toucanfish",
+    creator: "@toucanfoosh",
+    description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+    images: {
+      url: new URL(
+        "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
+      ),
+      alt: "A toucanfish",
+      type: "image/png",
+      width: 1200,
+      height: 630,
+    },
   },
 };
 
@@ -23,22 +49,40 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
+        <link
+          rel="icon"
+          href="/favicon_io/favicon-16x16.png"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/favicon-32x32.png"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          href="/favicon_io/favicon.ico"
+          type="image/ico"
+          sizes="any"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/favicon_io/apple-touch-icon.png"
+          sizes="any"
+        />
+        <link
+          rel="android-chrome"
+          href="/favicon_io/android-chrome-192x192.png"
+          sizes="192x192"
+        />
+        <link
+          rel="android-chrome"
+          href="/favicon_io/android-chrome-512x512.png"
+          sizes="512x512"
+        />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="Daniel Wu" content={metadata.description} />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta
-          property="og:image:url"
-          content={metadata.openGraph.images[0].url}
-        />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={metadata.title} />
-        <meta name="twitter:description" content={metadata.description} />
-        <meta
-          name="twitter:image:url"
-          content={metadata.openGraph.images[0].url}
-        />
       </Head>
       <body>{children}</body>
     </html>

@@ -7,18 +7,6 @@ interface TabsProps {
   animating: boolean;
 }
 
-const getTabClass = (i: number) => {
-  switch (i) {
-    case 0:
-      return "about";
-    case 1:
-      return "projects";
-    case 2:
-      return "music";
-    default:
-      return "";
-  }
-};
 export default function Tabs({
   tabs,
   selectedTab,
@@ -28,11 +16,10 @@ export default function Tabs({
   return (
     <div className="flex flex-row justify-center content-center pb-8">
       {tabs.map((tab, i) => {
-        const tabClass = getTabClass(i);
         return (
           <div
             key={-i}
-            className={`p-tab-container ${tabClass} ${
+            className={`p-tab-container ${
               selectedTab === i ? "max-w-[0%]" : "max-w-[100%]"
             }`}
           >
