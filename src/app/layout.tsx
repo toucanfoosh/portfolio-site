@@ -14,9 +14,7 @@ export const metadata: Metadata = {
     siteName: "Daniel Wu",
     images: [
       {
-        url: new URL(
-          "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
-        ),
+        url: new URL("https://ibb.co/t36tJWY"),
         alt: "A toucanfish",
         type: "image/png",
         width: 1200,
@@ -29,9 +27,7 @@ export const metadata: Metadata = {
     creator: "@toucanfoosh",
     description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
     images: {
-      url: new URL(
-        "https://cdn.discordapp.com/attachments/959320945133248512/1231518069873049651/toucanfish.png?ex=66373f94&is=6624ca94&hm=f5044fdd5196fb687aeda56e38f793557d955d26b946bacb41741eac8d145e5b&"
-      ),
+      url: new URL("https://ibb.co/t36tJWY"),
       alt: "A toucanfish",
       type: "image/png",
       width: 1200,
