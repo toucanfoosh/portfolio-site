@@ -6,7 +6,7 @@ export default function Projects(): React.ReactElement {
     {
       name: "Brain Tumor MRI Classification",
       description:
-        "This project aims to increase the accuracy of a CNN model to correctly identify the presence of a tumor in a MR image by using a combination of a GAN and transfer learning over conventional methods.",
+        "This project aimed to increase the accuracy of a CNN model to correctly identify tumor presence in MR images by using a combination of a GAN and transfer learning vs conventional methods.",
       skills: "PyTorch, TensorFlow, CNNs, GANs, Transfer Learning",
       image: "/images/mriclassification.png",
       imagedesc: "MRI Classification Project Thumbnail Image",

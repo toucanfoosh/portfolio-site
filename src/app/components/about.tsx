@@ -1,8 +1,8 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { Nunito_Sans } from "next/font/google";
+import { Raleway } from "next/font/google";
 
-const nunitoSans = Nunito_Sans({
+const raleway = Raleway({
   subsets: ["latin"],
   display: "swap",
 });
@@ -13,10 +13,10 @@ export default function About(): React.ReactElement {
       <h1 className={`text-5xl md:text-7xl font-bold font-basement pb-5  px-5`}>
         About
       </h1>
-      <div className={`text-xl md:text-2xl pb-5 px-5 ${nunitoSans.className}`}>
+      <div className={`text-xl md:text-2xl pb-5 px-5 ${raleway.className}`}>
         <p>Heyo 👋!</p>
         <p>
-          My name is Daniel and I am a graduate student at Northeastern
+          My name is Daniel and I am a Master's student at Northeastern
           University studying Computer Science and graduating in the Fall of
           2025. I have passion and experience in both front-end engineering and
           AI/ML. If you need anything from me feel free to reach out!

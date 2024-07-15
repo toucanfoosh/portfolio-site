@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Nunito_Sans } from "next/font/google";
+import { Raleway } from "next/font/google";
 
-const nunitoSans = Nunito_Sans({
+const raleway = Raleway({
   subsets: ["latin"],
   display: "swap",
 });
@@ -19,7 +19,7 @@ export default function Music(): React.ReactElement {
           userSelect: "none",
         }}
       />
-      <h1 className={`pt-5 text-lg ${nunitoSans.className}`}>
+      <h1 className={`pt-5 text-lg ${raleway.className}`}>
         Something is coming...
       </h1>
     </div>
