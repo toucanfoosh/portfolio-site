@@ -16,7 +16,7 @@ export default function About(): React.ReactElement {
       <div className={`text-xl md:text-2xl pb-5 px-5 ${raleway.className}`}>
         <p>Heyo 👋!</p>
         <p>
-          My name is Daniel and I am a Master's student at Northeastern
+          My name is Daniel and I am a Master&apos;s student at Northeastern
           University studying Computer Science and graduating in the Fall of
           2025. I have passion and experience in both front-end engineering and
           AI/ML. If you need anything from me feel free to reach out!
