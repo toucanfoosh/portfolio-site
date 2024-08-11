@@ -17,16 +17,6 @@ export default function Projects(): React.ReactElement {
       downloadcaption: "Download the project report",
     },
     {
-      name: "3D2Text",
-      description:
-        "This project aimed to help me get more familiar with some applied linear algebra and geometry to generate a 2d text representation of 3d objects.",
-      skills: "Typescript, Matrix Math, React, File Parsing",
-      image: "/images/3d2text.png",
-      imagedesc: "3D2Text Project Thumbnail Image",
-      caption: "Click for the website",
-      link: "https://www.3d2text.com/",
-    },
-    {
       name: "Remolist",
       description:
         "Job board site that specializes in helping find remote jobs.",
@@ -36,6 +26,16 @@ export default function Projects(): React.ReactElement {
       imagedesc: "Remolist Project Thumbnail Image",
       caption: "Click for the website",
       link: "https://remolist.com/",
+    },
+    {
+      name: "3D2Text",
+      description:
+        "This project aimed to help me get more familiar with some applied linear algebra and geometry to generate a 2d text representation of 3d objects.",
+      skills: "Typescript, Matrix Math, React, File Parsing",
+      image: "/images/3d2text.png",
+      imagedesc: "3D2Text Project Thumbnail Image",
+      caption: "Click for the website",
+      link: "https://www.3d2text.com/",
     },
   ];
 
