@@ -26,6 +26,17 @@ export default function Projects(): React.ReactElement {
       caption: "Click for the website",
       link: "https://www.3d2text.com/",
     },
+    {
+      name: "Remolist",
+      description:
+        "Job board site that specializes in helping find remote jobs.",
+      skills:
+        "React, Next, Google Cloud, Firebase, Web Scraping, Tailwind, Typescript, Python",
+      image: "/images/Remolist.png",
+      imagedesc: "Remolist Project Thumbnail Image",
+      caption: "Click for the website",
+      link: "https://remolist.com/",
+    },
   ];
 
   return (
