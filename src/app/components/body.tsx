@@ -39,7 +39,7 @@ export default function Body(): React.ReactElement {
       setAnimating(true);
       setTimeout(() => {
         setAnimating(false);
-      }, 2500);
+      }, 1500);
       setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-right">{getContent(tab)}</div>
@@ -52,7 +52,7 @@ export default function Body(): React.ReactElement {
       setAnimating(true);
       setTimeout(() => {
         setAnimating(false);
-      }, 2500);
+      }, 1500);
       setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-left">{getContent(tab)}</div>

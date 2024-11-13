@@ -1,11 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { Raleway } from "next/font/google";
-
-const raleway = Raleway({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { secondaryFont } from "./fonts";
 
 export default function About(): React.ReactElement {
   return (
@@ -13,7 +8,9 @@ export default function About(): React.ReactElement {
       <h1 className={`text-5xl md:text-7xl font-bold font-basement pb-5  px-5`}>
         About
       </h1>
-      <div className={`text-xl md:text-2xl pb-5 px-5 ${raleway.className}`}>
+      <div
+        className={`text-xl md:text-2xl pb-5 px-5 ${secondaryFont.className}`}
+      >
         <p>Heyo 👋!</p>
         <p>
           My name is Daniel and I am a Master&apos;s student at Northeastern
@@ -26,7 +23,7 @@ export default function About(): React.ReactElement {
             onClick={() =>
               window.open("https://github.com/toucanfoosh", "_blank")
             }
-            className="flex flex-row justify-center items-center cursor-pointer hover:scale-110 transition-transform"
+            className={`flex flex-row justify-center items-center cursor-pointer hover:scale-110 transition-transform ${secondaryFont.className}`}
           >
             <FaGithub className="pe-2 scale-150" />
             Github
@@ -35,12 +32,14 @@ export default function About(): React.ReactElement {
             onClick={() =>
               window.open("https://www.linkedin.com/in/toucanfish/", "_blank")
             }
-            className="flex flex-row justify-center items-center cursor-pointer  hover:scale-110 transition-transform"
+            className={`flex flex-row justify-center items-center cursor-pointer  hover:scale-110 transition-transform ${secondaryFont.className}`}
           >
             <FaLinkedin className="pe-2 scale-150" />
             LinkedIn
           </div>
-          <div className="flex flex-row justify-center items-center">
+          <div
+            className={`flex flex-row justify-center items-center ${secondaryFont.className}`}
+          >
             <IoMail className="pe-2 scale-150" />
             danielwu.toucan at gmail.com
           </div>
@@ -51,7 +50,7 @@ export default function About(): React.ReactElement {
           onClick={() =>
             window.open("https://github.com/toucanfoosh", "_blank")
           }
-          className="pb-2 text-base sm:text-2xl flex flex-row justify-center items-center cursor-pointer hover:scale-110 transition-transform"
+          className={`pb-2 text-base sm:text-2xl flex flex-row justify-center items-center cursor-pointer hover:scale-110 transition-transform ${secondaryFont.className}`}
         >
           <FaGithub className="pe-2 scale-150" />
           Github
@@ -60,12 +59,14 @@ export default function About(): React.ReactElement {
           onClick={() =>
             window.open("https://www.linkedin.com/in/toucanfish/", "_blank")
           }
-          className="pb-2 text-base sm:text-2xl flex flex-row justify-center items-center cursor-pointer  hover:scale-110 transition-transform"
+          className={`pb-2 text-base sm:text-2xl flex flex-row justify-center items-center cursor-pointer  hover:scale-110 transition-transform ${secondaryFont.className}`}
         >
           <FaLinkedin className="pe-2 scale-150" />
           LinkedIn
         </div>
-        <div className="pb-2 text-base sm:text-2xl flex flex-row justify-center items-center">
+        <div
+          className={`pb-2 text-base sm:text-2xl flex flex-row justify-center items-center ${secondaryFont.className}`}
+        >
           <IoMail className="pe-2 scale-150" />
           danielwu.toucan at gmail.com
         </div>

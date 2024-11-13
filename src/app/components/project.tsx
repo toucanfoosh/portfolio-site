@@ -1,12 +1,7 @@
 import Image from "next/image";
-import { Raleway } from "next/font/google";
+import { secondaryFont } from "./fonts";
 import "../globals.css";
 import { LuExternalLink } from "react-icons/lu";
-
-const raleway = Raleway({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 interface ProjectProps {
   name: string;
@@ -49,7 +44,7 @@ export default function Project({
           }}
         />
         <div
-          className={`flex items-center ${raleway.className} text-gray-400 pt-1`}
+          className={`flex items-center ${secondaryFont.className} text-gray-400 pt-1`}
         >
           <caption className="text-sm text-center pe-1">{`${caption}`}</caption>
           <LuExternalLink />
@@ -58,14 +53,14 @@ export default function Project({
       <div className="flex flex-col flex-1 m-5 mt-0 lg:mt-5 justify-between lg:h-[256px]">
         <div>
           <h1 className="text-2xl font-basement font-bold pb-1">{name}</h1>
-          <p className={`text-lg ${raleway.className}`}>{description}</p>
+          <p className={`text-lg ${secondaryFont.className}`}>{description}</p>
         </div>
         <div className="pt-8 font-basement font-bold text-lg">
           Skills Used: {`${skills}`}
         </div>
         {download && downloadName && downloadcaption && (
           <div
-            className={`w-[16rem] h-[4rem] rounded-lg text-white bg-black/50 mt-4 flex items-center justify-center ${raleway.className} p-noselect cursor-pointer hover:bg-black/75 hover:scale-105 transition-all`}
+            className={`w-[16rem] h-[4rem] rounded-lg text-white bg-black/50 mt-4 flex items-center justify-center ${secondaryFont.className} p-noselect cursor-pointer hover:bg-black/75 hover:scale-105 transition-all`}
           >
             <a
               href={download}

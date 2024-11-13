@@ -1,10 +1,5 @@
 import Image from "next/image";
-import { Raleway } from "next/font/google";
-
-const raleway = Raleway({
-  subsets: ["latin"],
-  display: "swap",
-});
+import { secondaryFont } from "./fonts";
 
 export default function Music(): React.ReactElement {
   return (
@@ -19,7 +14,7 @@ export default function Music(): React.ReactElement {
           userSelect: "none",
         }}
       />
-      <h1 className={`pt-5 text-lg ${raleway.className}`}>
+      <h1 className={`pt-5 text-lg ${secondaryFont.className}`}>
         Something is coming...
       </h1>
     </div>
