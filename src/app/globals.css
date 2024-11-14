@@ -18,9 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-anchor: none;
@@ -48,7 +51,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(-45deg, #23c0b5 0%, #520979 100%); */
-  background: linear-gradient(-45deg, #010101 0%, #112152 50%, #644897 100%);
+  background: linear-gradient(-45deg, #000e5c 0%, #000000 100%);
   background-size: 400% 400%;
   animation: gradient 120s ease infinite;
   height: 100vh;

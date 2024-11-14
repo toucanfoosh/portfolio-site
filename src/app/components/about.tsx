@@ -12,11 +12,17 @@ export default function About(): React.ReactElement {
         className={`text-xl md:text-2xl pb-5 px-5 ${secondaryFont.className}`}
       >
         <p>Heyo 👋!</p>
-        <p>
+        {/* <p>
           My name is Daniel and I am a Master&apos;s student at Northeastern
           University studying Computer Science and graduating in the Fall of
           2025. I have passion and experience in both front-end engineering and
           AI/ML. If you need anything from me feel free to reach out!
+        </p> */}
+        <p>
+          Daniel is a Master&apos;s student at Northeastern University studying
+          Computer Science and graduating in the Spring of 2025. He has
+          experience in both full-stack web development and AI/ML. If you need
+          anything from him feel free to reach out.
         </p>
         <div className="hidden lg:flex text-2xl flex-row justify-around items-center pt-10">
           <div
@@ -45,7 +51,7 @@ export default function About(): React.ReactElement {
           </div>
         </div>
       </div>
-      <div className="flex lg:hidden text-2xl flex-col justify-around items-center pt-8">
+      <div className="flex lg:hidden text-2xl flex-col justify-around items-center pt-5">
         <div
           onClick={() =>
             window.open("https://github.com/toucanfoosh", "_blank")

@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background: radial-gradient(#003763, #000);
+  background: radial-gradient(#003763 0%, #132645 50%, #000 100%);
   width: 100vw;
   height: 100vh;
 }
@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: blur(50px);
+  filter: blur(30px);
   opacity: 0.2;
 }
 

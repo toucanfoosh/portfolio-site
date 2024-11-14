@@ -10,7 +10,7 @@ export default function Background(): React.ReactElement {
         <div className="spiral"></div>
         <div className="spiral"></div>
       </div>
-      <div className="fib8">
+      {/* <div className="fib8">
         <div className="spiral"></div>
         <div className="spiral"></div>
         <div className="spiral"></div>
@@ -19,7 +19,7 @@ export default function Background(): React.ReactElement {
         <div className="spiral"></div>
         <div className="spiral"></div>
         <div className="spiral"></div>
-      </div>
+      </div> */}
     </div>
   );
 }
