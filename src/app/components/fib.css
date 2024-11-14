@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: blur(50px);
+  filter: blur(100px);
   opacity: 0.2;
 }
 
