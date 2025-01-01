@@ -4,6 +4,16 @@ import Project from "./project";
 export default function Projects(): React.ReactElement {
   const projectList = [
     {
+      name: "llm-jailbreak",
+      description:
+        "A npm package that uses a neural network to check whether a given string is likely to be an 'llm jailbreak' string or not.",
+      skills: "Python, PyTorch, Neural Networks, Typescript, Node.js",
+      image: "/images/npm.png",
+      imagedesc: "llm-jailbreak NPM Project Thumbnail Image",
+      caption: "Click for the NPM Page",
+      link: "https://www.npmjs.com/package/llm-jailbreak",
+    },
+    {
       name: "Brain Tumor MRI Classification",
       description:
         "This project aimed to increase the accuracy of a CNN model to correctly identify tumor presence in MR images by using a combination of a GAN and transfer learning vs conventional methods.",
