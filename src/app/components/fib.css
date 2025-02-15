@@ -28,7 +28,7 @@ body {
   opacity: 0.2;
 }
 
-.container > div {
+.container>div {
   position: absolute;
   width: 200vmax;
   height: 200vmax;
@@ -139,6 +139,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
