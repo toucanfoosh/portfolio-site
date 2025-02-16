@@ -27,9 +27,19 @@ export default function Projects(): React.ReactElement {
       downloadcaption: "Download the project report",
     },
     {
+      name: "ThermaSense",
+      description:
+        "Prototype website for a project to predict current month heating costs for a given zip code.",
+      skills: "React, Next, Tailwind, Typescript, Python, Tensorflow, Pandas",
+      image: "/images/ThermaSense.png",
+      imagedesc: "ThermaSense Project Thumbnail Image",
+      caption: "Click for the website",
+      link: "https://67b2408b3fdff0e4e9e02062--grid-sense.netlify.app/",
+    },
+    {
       name: "Remolist",
       description:
-        "Job board site that specializes in helping find remote jobs.",
+        "Job board that specializes in helping find remote listings.",
       skills:
         "React, Next, Google Cloud, Firebase, Web Scraping, Tailwind, Typescript, Python",
       image: "/images/Remolist.png",

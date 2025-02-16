@@ -11,7 +11,7 @@ export default function About(): React.ReactElement {
       <div
         className={`text-xl md:text-2xl pb-5 px-5 ${secondaryFont.className}`}
       >
-        <p>Heyo 👋!</p>
+        <p>Hello 👋!</p>
         {/* <p>
           My name is Daniel and I am a Master&apos;s student at Northeastern
           University studying Computer Science and graduating in the Fall of
@@ -19,10 +19,10 @@ export default function About(): React.ReactElement {
           AI/ML. If you need anything from me feel free to reach out!
         </p> */}
         <p>
-          Daniel is a Master&apos;s student at Northeastern University studying
-          Computer Science and graduating in the Spring of 2025. He has
-          experience in both full-stack web development and AI/ML. If you need
-          anything from him feel free to reach out.
+          I am currently a Master&apos;s student at Northeastern University
+          studying Computer Science. I have experience in both front-end web
+          development and AI/ML Engineering. If you need anything from me feel
+          free to reach out!
         </p>
         <div className="hidden lg:flex text-2xl flex-row justify-around items-center pt-10">
           <div
