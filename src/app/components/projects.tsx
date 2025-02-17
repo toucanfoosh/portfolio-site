@@ -34,7 +34,7 @@ export default function Projects(): React.ReactElement {
       image: "/images/ThermaSense.png",
       imagedesc: "ThermaSense Project Thumbnail Image",
       caption: "Click for the website",
-      link: "https://67b2408b3fdff0e4e9e02062--grid-sense.netlify.app/",
+      link: "https://thermasense.netlify.app/",
     },
     {
       name: "Remolist",
