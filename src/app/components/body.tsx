@@ -111,7 +111,7 @@ export default function Body(): React.ReactElement {
         />
         {content}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
