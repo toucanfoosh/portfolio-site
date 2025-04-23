@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { secondaryFont } from "../fonts/fonts";
+import { secondaryFont } from "../../../fonts/fonts";
 
 export default function About(): React.ReactElement {
   return (
