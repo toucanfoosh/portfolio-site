@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { secondaryFont } from "./fonts";
+import { secondaryFont } from "../../../fonts/fonts";
 import "../globals.css";
 import { LuExternalLink } from "react-icons/lu";
 

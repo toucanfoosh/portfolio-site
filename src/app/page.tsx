@@ -1,15 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import posthog from "posthog-js";
-import localFont from "next/font/local";
+import { mainFont } from "./fonts/fonts";
 import Body from "./components/body";
 import "./globals.css";
-import Background from "./components/background";
-
-const basementGrotesque = localFont({
-  src: "basement-grotesque/BasementGrotesque-Black.otf",
-  variable: "--font-basement-grotesque",
-});
+import Background from "./components/background/background";
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +28,7 @@ export default function Home() {
       <Background />
       <div className="p-site-container pb-10">
         <div
-          className={`flex flex-col w-[100vw] h-[100%] ${basementGrotesque.variable}`}
+          className={`flex flex-col w-[100vw] h-[100%] ${mainFont.variable}`}
         >
           <Body />
         </div>

@@ -1,18 +1,19 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Tabs from "./tabs";
+import Tabs from "./tabs/tabs";
 import "./index.css";
-import NameHeader from "./nameheader";
+import NameHeader from "./tabs/nameheader";
 import { useState } from "react";
-import About from "./about";
-import Projects from "./projects";
-import Music from "./music";
+import About from "./pages/general/about";
+import Projects from "./pages/cs/projects";
+import AfterDark from "./pages/music/AfterDark";
+import Footer from "./footer/footer";
 
 export default function Body(): React.ReactElement {
   const [tab, setTab] = useState(-1);
   const [oldTab, setOldTab] = useState(-1);
-  const tabs = ["About", "Projects", "Music"];
+  const tabs = ["AFTER DARK"];
   const [content, setContent] = useState<React.ReactElement>();
   const [animating, setAnimating] = useState(false);
 
@@ -39,12 +40,12 @@ export default function Body(): React.ReactElement {
       setAnimating(true);
       setTimeout(() => {
         setAnimating(false);
-      }, 1500);
+      }, 1000);
       setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-right">{getContent(tab)}</div>
         );
-      }, 1500);
+      }, 1000);
       setContent(
         <div className="p-animate-slide-out-left">{getContent(oldTab)}</div>
       );
@@ -52,12 +53,12 @@ export default function Body(): React.ReactElement {
       setAnimating(true);
       setTimeout(() => {
         setAnimating(false);
-      }, 1500);
+      }, 1000);
       setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-left">{getContent(tab)}</div>
         );
-      }, 1500);
+      }, 1000);
       setContent(
         <div className="p-animate-slide-out-right">{getContent(oldTab)}</div>
       );
@@ -65,6 +66,7 @@ export default function Body(): React.ReactElement {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tab]);
 
+  // --- Pages ---
   function getContent(tab: number) {
     switch (tab) {
       case -1:
@@ -72,19 +74,7 @@ export default function Body(): React.ReactElement {
       case 0:
         return (
           <div className="w-[90vw] rounded-lg max-w-[50rem] pt-5">
-            <About />
-          </div>
-        );
-      case 1:
-        return (
-          <div className="w-[90vw] rounded-lg max-w-[75rem] pt-5">
-            <Projects />
-          </div>
-        );
-      case 2:
-        return (
-          <div className="w-[90vw] rounded-lg max-w-[50rem] pt-5">
-            <Music />
+            <AfterDark />
           </div>
         );
       default:
@@ -121,6 +111,7 @@ export default function Body(): React.ReactElement {
         />
         {content}
       </div>
+      {/* <Footer /> */}
     </>
   );
 }

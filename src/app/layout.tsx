@@ -1,21 +1,23 @@
 import { Metadata } from "next";
 import Head from "next/head";
 
+const metaDescription = "Pre-save AFTER DARK out everywhere May 50th";
+
 export const metadata: Metadata = {
   title: "Daniel Wu",
-  description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+  description: metaDescription,
   metadataBase: new URL("https://www.toucanfish.com"),
   openGraph: {
     title: "Daniel Wu",
-    description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+    description: metaDescription,
     type: "website",
     url: "https://www.toucanfish.com",
     locale: "en_US",
     siteName: "Daniel Wu",
     images: [
       {
-        url: new URL("https://ibb.co/qxWf4G7"),
-        alt: "A toucanfish",
+        url: new URL("https://ibb.co/tMNPWkQj"),
+        alt: "AFTER DARK album cover",
         type: "image/png",
         width: 1200,
         height: 630,
@@ -25,10 +27,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     creator: "@toucanfoosh",
-    description: "🔥🔥🔥 Fire Website 🔥🔥🔥\n✅ You should hire this guy ✅",
+    description: metaDescription,
     images: {
-      url: new URL("https://ibb.co/qxWf4G7"),
-      alt: "A toucanfish",
+      url: new URL("https://ibb.co/tMNPWkQj"),
+      alt: "AFTER DARK album cover",
       type: "image/png",
       width: 1200,
       height: 630,

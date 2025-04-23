@@ -1,22 +1,19 @@
-.p-tab-container {
+.p-tab {
+    display: inline-block;
     overflow: hidden;
-    transition-property: max-width;
-    transition-timing-function: cubic-bezier(.49, .12, .19, 1);
-    transition-duration: 1.4s;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.5s ease, max-width 1.5s ease 0.5s;
 }
 
-.p-tab-in {
-    transition-property: margin, opacity;
-    transition-timing-function: cubic-bezier(.49, .12, .19, 1);
-    transition-duration: 1s, 1s;
-    transition-delay: 0.1s, .25s;
+.p-tab.p-selected,
+.p-tab.p-tab-out {
+    opacity: 0;
+    max-width: 0;
 }
 
-.p-tab-out {
-    transition-property: margin, opacity;
-    transition-timing-function: cubic-bezier(.49, .12, .19, 1);
-    transition-duration: 0.25s, .5s;
-    transition-delay: 0.5s, 0s;
+.p-tab:not(.p-selected) {
+    transition: opacity 0.5s ease 1.25s, max-width 1.5s ease;
 }
 
 .p-invert-hover:hover {
@@ -75,7 +72,7 @@
 }
 
 .p-animate-slide-out-left {
-    translate: translateX(0);
+    transform: translateX(0);
     animation: slide-out-left 1s cubic-bezier(0.49, 0.12, 0.19, 1) forwards;
     animation-delay: 0.5s;
 }
@@ -90,10 +87,8 @@
     }
 }
 
-
-
 .p-animate-slide-in-left {
-    translate: translateX(-100vw);
+    transform: translateX(-100vw);
     animation: slide-in-left 1s cubic-bezier(0.49, 0.12, 0.19, 1) forwards;
 }
 
@@ -108,7 +103,7 @@
 }
 
 .p-animate-slide-out-right {
-    translate: translateX(0);
+    transform: translateX(0);
     animation: slide-out-right 1s cubic-bezier(0.49, 0.12, 0.19, 1) forwards;
     animation-delay: 0.5s;
 }
