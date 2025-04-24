@@ -29,7 +29,6 @@ export default function AfterDark(): React.ReactElement {
           Click here to pre-save
         </div>
       </h1>
-      {/* Add presave buttons or whatever */}
     </div>
   );
 }
