@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Head from "next/head";
 
-const metaDescription = "Pre-save AFTER DARK out everywhere May 50th";
+const metaDescription = "AFTER DARK by Daniel Wu out everywhere May 4th";
 
 export const metadata: Metadata = {
   title: "Daniel Wu",
