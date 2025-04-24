@@ -2,11 +2,14 @@ import { Metadata } from "next";
 import Head from "next/head";
 
 const metaDescription = "AFTER DARK by Daniel Wu out everywhere May 4th";
+const baseURL = "https://www.toucanfish.com";
+const bannerURL = "/site-banner.png";
+const bannerAlt = "AFTER DARK EP cover";
 
 export const metadata: Metadata = {
   title: "Daniel Wu",
   description: metaDescription,
-  metadataBase: new URL("https://www.toucanfish.com"),
+  metadataBase: new URL(baseURL),
   openGraph: {
     title: "Daniel Wu",
     description: metaDescription,
@@ -16,8 +19,8 @@ export const metadata: Metadata = {
     siteName: "Daniel Wu",
     images: [
       {
-        url: new URL("https://ibb.co/tMNPWkQj"),
-        alt: "AFTER DARK album cover",
+        url: bannerURL,
+        alt: bannerAlt,
         type: "image/png",
         width: 1200,
         height: 630,
@@ -29,8 +32,8 @@ export const metadata: Metadata = {
     creator: "@toucanfoosh",
     description: metaDescription,
     images: {
-      url: new URL("https://ibb.co/tMNPWkQj"),
-      alt: "AFTER DARK album cover",
+      url: bannerURL,
+      alt: bannerAlt,
       type: "image/png",
       width: 1200,
       height: 630,

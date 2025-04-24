@@ -6,7 +6,7 @@ export default function AfterDark(): React.ReactElement {
     <div className="flex flex-col justify-center items-center mb-12">
       <Image
         src={"/images/afterdark.png"}
-        alt="Album cover for AFTER DARK"
+        alt="AFTER DARK EP cover"
         width="256"
         height="256"
         style={{
