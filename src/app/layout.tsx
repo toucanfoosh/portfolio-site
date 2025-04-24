@@ -1,9 +1,12 @@
 import { Metadata } from "next";
 import Head from "next/head";
+import ogImage from "../../public/images/site-banner.png";
 
 const metaDescription = "AFTER DARK by Daniel Wu out everywhere May 4th";
 const baseURL = "https://www.toucanfish.com";
-const bannerURL = "/site-banner.png";
+const bannerURL = ogImage.src;
+const bannerHeight = ogImage.height;
+const bannerWidth = ogImage.width;
 const bannerAlt = "AFTER DARK EP cover";
 
 export const metadata: Metadata = {
@@ -22,8 +25,8 @@ export const metadata: Metadata = {
         url: bannerURL,
         alt: bannerAlt,
         type: "image/png",
-        width: 1200,
-        height: 630,
+        width: bannerWidth,
+        height: bannerHeight,
       },
     ],
   },
@@ -35,8 +38,8 @@ export const metadata: Metadata = {
       url: bannerURL,
       alt: bannerAlt,
       type: "image/png",
-      width: 1200,
-      height: 630,
+      width: bannerWidth,
+      height: bannerHeight,
     },
   },
 };
