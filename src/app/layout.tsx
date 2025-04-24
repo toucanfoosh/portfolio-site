@@ -69,6 +69,16 @@ export default function RootLayout({
           href="/favicon_io/apple-touch-icon.png"
           sizes="any"
         />
+        <link
+          rel="android-chrome"
+          href="/favicon_io/android-chrome-192x192.png"
+          sizes="192x192"
+        />
+        <link
+          rel="android-chrome"
+          href="/favicon_io/android-chrome-512x512.png"
+          sizes="512x512"
+        />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body>{children}</body>
