@@ -20,16 +20,16 @@ export default function Footer(): React.ReactElement {
     },
     {
       Icon: FaSpotify,
-      link: "https://www.spotify.com",
+      link: "https://open.spotify.com/artist/5yuhekPX2ksmvOnVCjV9N9?si=XgFip5iWR2qhCBU3RSyBPg",
     },
     {
       Icon: FaApple,
-      link: "https://www.apple.com",
+      link: "https://music.apple.com/us/artist/daniel-wu/1810222174",
     },
-    {
-      Icon: FaYoutube,
-      link: "https://www.youtube.com",
-    },
+    // {
+    //   Icon: FaYoutube,
+    //   link: "https://www.youtube.com",
+    // },
   ];
 
   const commonClasses =
@@ -57,7 +57,7 @@ export default function Footer(): React.ReactElement {
   return (
     <div
       ref={footerRef}
-      className="absolute flex flex-row gap-5 justify-center items-center w-full h-24 transition-all duration-0"
+      className="absolute bottom-0 flex flex-row gap-5 justify-center items-center w-full h-24 transition-all duration-0"
     >
       {icons.map(({ Icon, link }, index) => (
         <Icon
