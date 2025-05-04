@@ -35,7 +35,7 @@ export default function Tabs({
             tabRefs.current[i] = el;
           }}
           onClick={animating ? () => {} : () => setTab(i)}
-          className={`p-tab mix-blend-overlay p-noselect font-basement font-bold text-2xl md:text-4xl ${
+          className={`p-tab mix-blend-overlay p-noselect font-basement font-bold text-2xl md:text-4xl border-b-4 ${
             selectedTab === i ? "p-selected" : "cursor-pointer p-invert-hover"
           }`}
           style={
