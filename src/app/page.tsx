@@ -18,7 +18,7 @@ export default function Home() {
         },
       });
     } else {
-      console.warn("PostHog key is missing; analytics not initialized.");
+      // console.warn("PostHog key is missing; analytics not initialized.");
     }
   }, []);
 

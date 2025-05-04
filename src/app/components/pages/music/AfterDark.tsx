@@ -21,10 +21,13 @@ export default function AfterDark(): React.ReactElement {
     <div className="flex flex-col justify-center items-center mb-12">
       <Image
         src={"/images/afterdark.png"}
-        alt="Album cover for AFTER DARK"
-        width={256}
-        height={256}
-        style={{ borderRadius: "0.5rem", userSelect: "none" }}
+        alt="AFTER DARK EP cover"
+        width="256"
+        height="256"
+        style={{
+          borderRadius: "0.5rem",
+          userSelect: "none",
+        }}
       />
       <h1 className={`pt-5 text-md text-center ${secondaryFont.className}`}>
         <p className="text-xl mb-2">AFTER DARK by Daniel Wu</p>
