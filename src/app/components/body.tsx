@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import Tabs from "./tabs/tabs";
 import "./index.css";
 import NameHeader from "./tabs/nameheader";
@@ -9,13 +9,13 @@ import NameHeader from "./tabs/nameheader";
 import AfterDark from "./pages/music/AfterDark";
 import Footer from "./footer/footer";
 
-export default function Body(): React.ReactElement {
+const Body = React.memo(function Body(): React.ReactElement {
   const [tab, setTab] = useState(0);
   const [oldTab, setOldTab] = useState(0);
   const [firstLoad, setFirstLoad] = useState(true);
   const [content, setContent] = useState<React.ReactElement>(getContent(0));
   const [animating, setAnimating] = useState(false);
-  const tabs = ["AFTER DARK"];
+  const tabs = useMemo(() => ["AFTER DARK"], []);
 
   useEffect(() => {
     if (firstLoad) {
@@ -27,23 +27,25 @@ export default function Body(): React.ReactElement {
 
     if (oldTab === -1) {
       setAnimating(true);
-      setTimeout(() => setAnimating(false), 2000);
+      const timer = setTimeout(() => setAnimating(false), 2000);
       setContent(
         <div className="p-animate-slide-in-up">{getContent(tab)}</div>
       );
+      return () => clearTimeout(timer);
     } else if (oldTab !== -1 && tab === -1) {
       setAnimating(true);
-      setTimeout(() => {
+      const timer1 = setTimeout(() => {
         setContent(<></>);
         setAnimating(false);
       }, 2000);
       setContent(
         <div className="p-animate-slide-out-down">{getContent(oldTab)}</div>
       );
+      return () => clearTimeout(timer1);
     } else if (tab > oldTab) {
       setAnimating(true);
-      setTimeout(() => setAnimating(false), 1000);
-      setTimeout(() => {
+      const timer1 = setTimeout(() => setAnimating(false), 1000);
+      const timer2 = setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-right">{getContent(tab)}</div>
         );
@@ -51,10 +53,14 @@ export default function Body(): React.ReactElement {
       setContent(
         <div className="p-animate-slide-out-left">{getContent(oldTab)}</div>
       );
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
     } else if (tab < oldTab) {
       setAnimating(true);
-      setTimeout(() => setAnimating(false), 1000);
-      setTimeout(() => {
+      const timer1 = setTimeout(() => setAnimating(false), 1000);
+      const timer2 = setTimeout(() => {
         setContent(
           <div className="p-animate-slide-in-left">{getContent(tab)}</div>
         );
@@ -62,9 +68,12 @@ export default function Body(): React.ReactElement {
       setContent(
         <div className="p-animate-slide-out-right">{getContent(oldTab)}</div>
       );
+      return () => {
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      };
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab]);
+  }, [tab, oldTab, firstLoad]);
 
   function getContent(tabIndex: number) {
     switch (tabIndex) {
@@ -86,11 +95,14 @@ export default function Body(): React.ReactElement {
     }
   }
 
-  function setNewTab(newTab: number) {
-    if (tab === newTab) return;
-    setOldTab(tab);
-    setTab(newTab);
-  }
+  const setNewTab = useCallback(
+    (newTab: number) => {
+      if (tab === newTab) return;
+      setOldTab(tab);
+      setTab(newTab);
+    },
+    [tab]
+  );
 
   return (
     <>
@@ -113,4 +125,6 @@ export default function Body(): React.ReactElement {
       <Footer />
     </>
   );
-}
+});
+
+export default Body;

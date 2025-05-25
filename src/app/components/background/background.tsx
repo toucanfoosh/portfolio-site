@@ -1,6 +1,7 @@
+import React from "react";
 import "./fib.css";
 
-export default function Background(): React.ReactElement {
+const Background = React.memo(function Background(): React.ReactElement {
   return (
     <div className="container">
       <div className="fib5">
@@ -22,4 +23,6 @@ export default function Background(): React.ReactElement {
       </div> */}
     </div>
   );
-}
+});
+
+export default Background;

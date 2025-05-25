@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import posthog from "posthog-js";
 import { mainFont } from "./fonts/fonts";
 import Body from "./components/body";
@@ -22,15 +22,18 @@ export default function Home() {
     }
   }, []);
 
+  const backgroundMemo = useMemo(() => <Background />, []);
+  const bodyMemo = useMemo(() => <Body />, []);
+
   return (
     <>
       {/* <div className="p-background-gradient -z-10" /> */}
-      <Background />
+      {backgroundMemo}
       <div className="p-site-container pb-10">
         <div
           className={`flex flex-col w-[100vw] h-[100%] ${mainFont.variable}`}
         >
-          <Body />
+          {bodyMemo}
         </div>
       </div>
     </>
